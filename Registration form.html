@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        font-family: sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    .form_container{
+        border-top: 8px solid rgb(255, 196, 0);
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 1cap;
+        padding: 0px 40px 10px 40px;
+        background-color: #fff;
+        margin-top: 2%;
+    }
+
+    .title_container h2{
+        text-align: center;
+        font-family: sans-serif;
+        line-height: 35px;
+        margin: 30px 0px 30px 0px;
+    }
+    .ep{
+        border: 1px solid;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .ep i{
+        margin: 7px 5px 5px 7px
+    }
+
+    .ep input{
+        height: 30px;
+        border-left: 1px solid;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        width: 338px;
+        padding: 0px 3px 0px 3px;
+        border-radius: 0px;
+    }
+
+    .fnln{
+        display: flex;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .fn, .ln{
+        border: 1px solid;
+    }
+
+    .fn input, .ln input{
+        width: 147px;
+        height: 30px;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        border-left: 1px solid;
+        padding: 0px 3px 0px 3px;
+    }
+
+    .ln{
+        margin-left: auto;
+    }
+    .fnln i{
+        margin: 7px 5px 5px 7px
+    }
+    .radio{
+        margin: 30px 0px 15px 0px;
+        font-size: 15px;
+        align-items: center;
+    }
+    .selectcountry{
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+    .selectcountry select{
+        width: 100%;
+        padding: 8px ;
+    }
+    
+    .checkbox{
+        font-size: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .register{
+        margin: 0px 0px 30px 0px;
+        width: 100%;
+    }
+
+    .register input{
+        width: 100%;
+        padding: 6px;
+        font-size: 16px;
+        border: none;
+        color: white;
+        background-color: rgb(255, 196, 0);
+    }
+</style>
+<body>
+    <div class="form_container">
+        <div class="title_container">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="">
+                <form>
+                    <div class="ep"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                        <input type="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="ep"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                        <input type="password" name="password" placeholder="Password" required />
+                    </div>
+                    <div class="ep"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                        <input type="password" name="password" placeholder="Re-type Password" required />
+                    </div>
+                    <div class="fnln">
+                        <div class="fn">
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                <input type="text" name="name" placeholder="First Name" />
+                            </div>
+                        </div>
+                        <div class="ln">
+                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                <input type="text" name="name" placeholder="Last Name" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="radiogroup1" id="rd1">
+                        <label for="rd1">Male</label>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="radiogroup1" id="rd2">
+                        <label for="rd2">Female</label>
+                    </div>
+                    <div class="selectcountry">
+                        <select>
+                            <option>Select a country</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                        </select>
+                        <div class="select_arrow"></div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="cb1">
+                        <label for="cb1">I agree with terms and conditions</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="cb2">
+                        <label for="cb2">I want to receive the newsletter</label>
+                    </div>
+                    <div class="register">
+                        <input class="button" type="submit" value="Register" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
